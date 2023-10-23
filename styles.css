@@ -1,0 +1,141 @@
+html{
+    box-sizing: border-box;
+}
+
+*, ::after, ::before{
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+    border: 0px red solid;
+}
+
+body{
+    background-color: #eeeeee;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.header, .hero, .footer{
+    background-color: #1F2937;
+}
+
+.hero, .info, .quote, .sign-up{
+    flex:1;
+}
+
+.header, ul a{
+    color: #eeeeee;
+}
+
+.header, .hero, .info, .quote{
+    padding: 16px 5vw;
+    /* ensure same padding as margin for .sign-up*/
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .logo{
+    font-size: 24px;
+    font-weight: 600;
+}
+
+ul a{
+    text-decoration: none;
+}
+
+.header ul{
+    display: flex;
+    list-style: none;
+    gap: 16px;
+}
+
+.hero{
+    display: flex;
+    align-items: end;
+    padding-top: 82px;
+    padding-bottom: 82px;
+    gap: 32px;
+
+}
+
+.hero .img-container{
+    flex: 1;
+    width: 80%;
+    min-width: 100px;
+    height: 36vh;
+    background-color: #767676;
+}
+
+.hero .left-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-width: 300px;
+    flex: 1;
+    color: #c1c1c1;
+    font-size: 18px;
+    height: 36vh;
+    gap: 10px;
+}
+
+.hero .left-section h1{
+    color: #eeeeee;
+    font-size: 48px;
+    font-weight: 900;
+}
+
+.hero button{
+    color: #eeeeee;
+    font-weight: bold;
+    padding: 8px 16px;
+    width: 110px;
+    background-color: #3882f6;
+    border-radius: 8px;
+}
+
+.info h2{
+    color: #222222;
+    font-size: 36px;
+    font-weight: 900;
+    text-align: center;
+    margin-top: 32px;
+    margin-bottom: 32px;
+}
+
+.info .card-container{
+    color: #767676;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    gap: 32px;
+    margin-bottom: 64px;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.info .card .img-container{
+    height: 25vh;
+    border-radius: 16px;
+    margin-bottom: 10px;
+    border: 3px #3882f6 solid;
+}
+
+.info .card{
+    width: 25vh;
+}
+
+.quote{
+    background-color: #eeeeee;
+}
+
+.sign-up{
+    background-color: #3882f6;
+    margin: 16px 32px;
+}
