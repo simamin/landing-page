@@ -2,6 +2,8 @@
 
 A basic landing page to experiment with use of flexbox.
 
+View website [here](https://noepse.github.io/landing-page/)
+
 ### future features
 - Media queries to allow responsiveness at smaller screen sizes
 
